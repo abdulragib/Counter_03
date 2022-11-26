@@ -32,9 +32,9 @@ function decrement(){
     num--;
     document.getElementById("num").innerHTML = num;
 
-    if(counter==0)
+    if(num==0)
     {
-        errorMsg.innerText="Hello one"
+        errorMsg.innerText="Error : Cannot go below 0";
         decrementCounter.disabled = true;
     }
 }
