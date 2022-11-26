@@ -3,7 +3,7 @@ body{
     color: #fff;
 }
 
-.error-msg{
+#error-msg{
     color:red;
 }
 
