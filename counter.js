@@ -27,16 +27,16 @@ function increment(){
 }
 
 function decrement(){
-    
+
     var num = document.getElementById("num").innerHTML;
     num--;
     document.getElementById("num").innerHTML = num;
 
-    if(num==0)
+    if(num<=0)
     {
         errorMsg.innerText="Error : Cannot go below 0";
         decrementCounter.disabled = true;
-    }
+    } 
 }
 
 function reset(){
