@@ -17,12 +17,12 @@ function increment(){
     var num = document.getElementById("num").innerHTML;
     num++;
     document.getElementById("num").innerHTML = num;
-    if(counter==0)
+    if(num==0)
     {
        decrementCounter.disabled = false;
     }
     else{
-        errorMsg.innerText="";
+        errorMsg.style.display="none";
     }
 }
 
@@ -34,6 +34,7 @@ function decrement(){
 
     if(num<=0)
     {
+        errorMsg.style.display="block";
         errorMsg.innerText="Error : Cannot go below 0";
         decrementCounter.disabled = true;
     } 
@@ -43,7 +44,7 @@ function reset(){
     document.getElementById("num").innerHTML = 0;
     if(counter==0)
     {
-        errorMsg.innerText=" ";
+        errorMsg.style.display="none";
        decrementCounter.disabled = false;
     }
 }
